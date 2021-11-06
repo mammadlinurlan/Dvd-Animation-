@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: customAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top: 0%;
+    left: 0%;
+    
+    
+}
+
+.cls-1{
+    fill: white;
+    animation: svgColorAnimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate
+    
+}
+
+
+@keyframes customAnimation {
+
+    0%{
+        top: 0%;
+        left: 0%;
+    }
+
+    20%{
+        top: 70%;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    
+    40%{
+        top: 100%;
+        left: 55%;
+        transform: translateY(-50%);
+    }
+
+    60%{
+        left: 0%;
+        top: 60%;
+    }
+
+    80%{
+        top: 0%;
+        left: 25%;
+        transform: translateY(0%);
+    }
+
+    100%{
+        top: 0%;
+        left: 0%;
+        
+    }
+}
+
+@keyframes svgColorAnimation {
+
+    0%{
+       fill: white;
+    }
+
+    20%{
+        fill: purple;
+    }
+    
+    40%{
+      fill: yellow;
+    }
+
+    60%{
+        fill: orange;
+    }
+
+    80%{
+       fill: green;
+    }
+
+    100%{
+        fill: red;
+    }
+}
+
+    
+
